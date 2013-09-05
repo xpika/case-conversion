@@ -1,13 +1,13 @@
-module Text.CompoundWord (
+module Text.CaseConversion (
  toCase
 ,fromCase
-,IdentifierCase (..)
+,WordCase (..)
 ) where
 
 import Data.Char
 import Data.List
 
-data IdentifierCase = Camel | Snake | Spinal
+data WordCase = Camel | Snake | Spinal
 
 toCase Camel = toCamelCase
 toCase Snake = toSnakeCase
