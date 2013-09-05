@@ -1,4 +1,4 @@
-case-converter
+compound-word
 ==============
 
-convert between camel and underscore case 
+convert between different formats for compounding words. 
