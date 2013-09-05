@@ -1,4 +1,4 @@
-module Text.CaseConverter (
+module Text.CompoundWord (
  toCase
 ,fromCase
 ,IdentifierCase (..)
