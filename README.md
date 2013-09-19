@@ -8,6 +8,9 @@ example.
 
 Prelude> :m + Text.CaseConversion
 Text.CaseConversion.fromCamelCase "helloWorld"
+
 ["hello","World"]
+
 Prelude Text.CaseConversion> toSnakeCase ["hello","world"]
+
 "hello_world"
