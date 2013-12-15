@@ -2,6 +2,13 @@ module Text.CaseConversion (
  toCase
 ,fromCase
 ,WordCase (..)
+,toCamelCase
+,toSnakeCase
+,toSpinalCase
+,fromCamelCase
+,fromSnakeCase
+,fromSpinalCase
+,convertCase
 ) where
 
 import Data.Char
@@ -32,3 +39,5 @@ fromCharacterCase c cs = head' ++ map tail tail'
   cs' = splitBy (==c) cs
 
 splitBy p = groupBy (const (not . p))
+
+convertCase c1 c2 = toCase c2 . fromCase c1  
