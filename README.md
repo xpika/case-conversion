@@ -4,11 +4,11 @@ case-conversion
 convert between different formats for compounding words. 
 
 
-example.
-
-Prelude> :m + Text.CaseConversion
+example:
 
 ```haskell
+Prelude> :m + Text.CaseConversion
+
 Text.CaseConversion.fromCamelCase "helloWorld"
 
 ["hello","World"]
