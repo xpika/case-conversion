@@ -1,5 +1,5 @@
 name: case-conversion
-version: 0.2
+version: 0.3
 cabal-version: >=1.8
 build-type: Simple
 license: BSD3
@@ -21,9 +21,11 @@ library
         Text.CaseConversion
     build-depends:
         base >1 && <10000
+    extensions: Safe
 
 executable case-converter
     main-is: Main.hs
+    extensions: Safe
     build-depends:
         base >1 && <10000
 
